@@ -1,4 +1,4 @@
-var Note = require("../note-model").Note;
+var Note = require("../public/js/note-model").Note;
 var testingText = "Message in a method...whoooaaahhh";
 
 var note = new Note(testingText);

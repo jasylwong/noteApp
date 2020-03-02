@@ -1,4 +1,4 @@
-var NoteList = require("../note-list-model").NoteList;
+var NoteList = require("../public/js/note-list-model").NoteList;
 
 var noteList = new NoteList();
 
