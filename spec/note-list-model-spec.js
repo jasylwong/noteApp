@@ -1,4 +1,4 @@
-var NoteList = require("../public/js/note-list-model").NoteList;
+// var NoteList = require("../public/js/note-list-model").NoteList;
 
 var noteList = new NoteList();
 
@@ -16,3 +16,4 @@ if (noteList.showNotes()[0] !== [note1][0]) {
 } else {
   console.log(".2");
 };
+
