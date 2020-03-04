@@ -1,27 +1,25 @@
-// describe('NoteController', () => {
-//   it('instantiates a Note Controller object', () => {
+describe('NoteController', () => {
+  it('instantiates a Note Controller object', () => {
+    var noteController = new NoteController();
+    expect(noteController instanceof NoteController).toBe(true);
+  })
 
-//   })
-// })
+  it('sets the innerHTML to show all the notes', () => {
+    var noteList = new NoteList()
+    var noteController = new NoteController(noteList)
 
+    // NoteListViewDouble.prototype = {
+    //   output: function() {}
+    // };
+    
+    // var noteListViewDouble = new NoteListViewDouble();
 
-// // var NoteList = require("../public/js/note-list-model").NoteList;
-// describe('NoteList', () => {
-//   describe('.showNotes()', () => {
-//     it('returns an array containing the notes', () => {
-//       var noteList = new NoteList();
-//       note1 = 'This is note 1 fam';
-//       noteList.notes.push(note1);
-//       expect(Array.isArray(noteList.showNotes())).toBe(true)
-//       expect(noteList.showNotes()[0]).toBe(note1)
-//     })
+    // // noteList.newNote('Favourite drink: Guinness')
+    // noteController.noteListViewDouble;
 
-//     describe('.createNote()', () => {
-//       var noteList = new NoteList();
-//       var noteText = 'This is note 1 fam';
-//       noteList.addNote(noteText);
-//       expect(noteList.showNotes()[noteList.showNotes().length -1] instanceof Note).toBe(true);
-//       expect(noteList.showNotes()[noteList.showNotes().length -1].showText()).toBe(noteText);
-//     })
-//   })
-// })
+    noteController.applyHtmlToApp();
+    pageText = document.getElementById('app').innerHTML;
+    expect(pageText).toBe('<ul><li><div>Favourite drink: Guinness</div></li></ul>')
+    // console.log(pageText)
+  })
+})
