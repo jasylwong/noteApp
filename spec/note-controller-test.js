@@ -19,6 +19,6 @@ describe('NoteController', () => {
 
     noteController.applyHtmlToApp();
     pageText = document.getElementById('app').innerHTML;
-    expect(pageText).toBe('<ul><li><div>Favourite drink: Guinness</div></li></ul>')
+    expect(pageText).toBe('<ul><li><div>Favourite drink: Gui</div></li></ul>')
   })
 })
