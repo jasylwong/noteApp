@@ -8,10 +8,10 @@ const it = (msg, fn) => describe(' ' + msg, fn)
 const matchers = (exp) => ({
   toBe: (assertion) => {
     if (exp === assertion) {
-      console.log('pass')
+      console.log('%c pass', 'color: green')
       return true;
     } else {
-      console.log('fail')
+      console.log('%c fail', 'color: red')
       return false;
     };
   }

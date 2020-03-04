@@ -2,10 +2,10 @@
 var testingText = "Message in a method...whoooaaahhh";
 
 describe('Note', () => {
-  describe('.containsTest()', () => {
-    it('contains the relevant text', () => {
+  describe('.showText()', () => {
+    it('shows the text content', () => {
       var note = new Note(testingText);
-      expect(note.containsText()).toBe(testingText)
+      expect(note.showText()).toBe(testingText)
     })
   })
 })
