@@ -5,8 +5,11 @@ describe('NoteController', () => {
   })
 
   it('sets the innerHTML to show all the notes', () => {
-    var noteList = new NoteList()
-    var noteController = new NoteController(noteList)
+    // var noteList = new NoteList()
+    // noteList.addNote('Favourite drink: Guinness')
+    // var noteController = new NoteController(noteList)
+    // noteController.applyHtmlToApp();
+    // noteController.makeUrlChangeShowTextForPage();
 
     // NoteListViewDouble.prototype = {
     //   output: function() {}
@@ -16,10 +19,14 @@ describe('NoteController', () => {
 
     // // noteList.newNote('Favourite drink: Guinness')
     // noteController.noteListViewDouble;
-
-    noteController.applyHtmlToApp();
+    var 
     pageText = document.getElementById('app').innerHTML;
-    console.log(pageText)
-    expect(pageText).toBe('<ul><li><a href="#notes/0">Favourite drink: Gui</a></li></ul>')
+    expect(pageText).toInclude('Favourite drink: Gui')
+  })
+
+  it('changes content of page to note clicked on', () => {
+    console.log(document.getElementById('app').innerText)
+    pageText = document.getElementById('app').innerHTML;
+    expect(pageText).toBe('Favourite drink: Guinness')
   })
 })

@@ -14,6 +14,15 @@ const matchers = (exp) => ({
       console.log('%c fail', 'color: red')
       return false;
     };
+  },
+  toInclude: (assertion) => {
+    if(exp.includes(assertion)) {
+      console.log('%c pass', 'color: green')
+      return true;
+    } else {
+      console.log('%c fail', 'color: red')
+      return false;
+    };
   }
 });
 
