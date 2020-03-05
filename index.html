@@ -5,18 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Note App</title>
-
+  <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
-  <h1>Note App</h1>
-  <h2>Current notes</h2>
-  <div id="app"></div>
-  <h2>Add a new note</h2>
+  <h1 id='test'>Note App</h1>
+  <h2 class='non-note-text'>Current notes:</h2>
+  <div id="app"></div></br>
+  <h2 class='non-note-text'>Add a new note:</h2>
 
-  <form id='text' action="#location" method='post'>
-    <textarea name="" id="" cols="30" rows="10"></textarea></br>
+  <form id='text' class='non-note-text' action="" method='post'>
+    <textarea name="" id="textarea" cols="50" rows="10"></textarea></br>
     <input type="submit" value='Submit'>
   </form>
+
+  <!-- <form id="go-homepage" action="" method='post'></form> -->
+  <a href="" id='go-homepage'></a>
+
+  <div><a class="author" target="_blank" href="https://github.com/jasylwong/CV">App created by Jason Wong</a></div>
   
   <script src="./lib/note-list-model.js"></script>
   <script src="./lib/note-model.js"></script>
