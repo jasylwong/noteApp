@@ -1,33 +1,31 @@
-### [Makers Academy](http://www.makersacademy.com) - Week 7 Pair programming challenge 
-
 # Notes app 📝
 
 #### Technologies: Javascript, HTML, CSS 
 
-[Task](#Task) | [Installation Instructions](#Installation) | [Functional Description](#Functional_Description) | [User Stories](#User_Stories) | [Further improvements](#Further_Improvements)
+[Objective](#Objective) | [Installation](#Installation) | [Specifications](#Specifications) | [User Stories](#User_Stories) | [Further work](#Further_work)
 
 ![insert_screenshot](screenshot.jpg)
 
-## <a name="Task">The Task</a>
+## <a name="Objective">Objective</a>
 
 Write a frontend, single page app using only pure JavaScript.
 
 This app is based on the Makers Academy Week 7 afternoon challenge. [Click here](https://github.com/makersacademy/course/tree/master/further_javascript) for further info.
 
-## <a name="Installation">Installation Instructions</a>
+## <a name="Installation">Installation</a>
 
 1. Fork this repository, clone to your local machine then change into the directory:
 ```
-$ git clone git@github.com:davmcgregor/notes-js.git
-$ cd notes-js
+$ git clone https://github.com/jasylwong/noteApp.git
+$ cd noteApp
 ```
-2. Run jasmine for tests and coverage
+2. Run self-built test framework for tests and coverage
 ```
 $ open SpecRunner.html
 ```
-3. Run the app on a local server and use on the broswer:
+3. Run the app on a local server and use on the browser:
 ```
-$ open NotesApp.html
+$ open index.html
 ```
 
 ## <a name="Functional_Description">Functional Description</a>
@@ -55,6 +53,7 @@ I can see the full text of an individual note on its own page
 So I can see all the information in the note
 ```
 
-## <a name="Further_Improvements">Further Improvements</a>
-* Add styling
+## <a name="Further_work">Further work</a>
+* Add further styling
 * Add further CRUD functionality
+* Save notes even on refresh
