@@ -60,3 +60,5 @@ So I can see all the information in the note
 * Add further CRUD functionality
 * Save notes even on refresh
 * Keep notes when using 'go back' button
+* Further refactoring
+* Tightening of tests
