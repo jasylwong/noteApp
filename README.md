@@ -1,5 +1,7 @@
 # Notes app 📝
 
+Check it out in action, right now, [click here!](http://note-app-js.surge.sh/)
+
 #### Technologies: Javascript, HTML, CSS 
 
 [Objective](#Objective) | [Installation](#Installation) | [Specifications](#Specifications) | [User Stories](#User_Stories) | [Further work](#Further_work)
