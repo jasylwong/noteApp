@@ -14,19 +14,21 @@
   <h2 class='non-note-text'>Add a new note:</h2>
 
   <form id='text' class='non-note-text' action="" method='post'>
-    <textarea name="" id="textarea" cols="50" rows="10"></textarea></br>
+    <textarea name="" id="textarea" cols="50" rows="10" required></textarea></br>
     <input type="submit" value='Submit'>
   </form>
 
   <!-- <form id="go-homepage" action="" method='post'></form> -->
   <a href="" id='go-homepage'></a>
 
-  <div><a class="author" target="_blank" href="https://github.com/jasylwong/CV">App created by Jason Wong</a></div>
+  <div><a id="author" target="_blank" href="https://github.com/jasylwong/CV">App created by Jason Wong</a></div>
+  <div id="bottom-right">Bonus: click anywhere to change colour ;)</a></div>
   
   <script src="./lib/note-list-model.js"></script>
   <script src="./lib/note-model.js"></script>
   <script src="./lib/note-list-view.js"></script>
   <script src="./lib/note-controller.js"></script>
   <script src="./lib/single-note-view.js"></script>
+  <script src="test.js"></script>
 </body>
 </html>

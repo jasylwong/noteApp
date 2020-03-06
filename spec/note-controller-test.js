@@ -28,6 +28,7 @@ describe('NoteController', () => {
   })
 
   it ('changes content of page to note clicked on', () => {
+    
     pageText = document.getElementById('app').innerHTML;
     expect(pageText).toBe('Favourite drink: Guinness')
   })

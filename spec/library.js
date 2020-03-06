@@ -5,7 +5,7 @@ const describe = (desc, fn) => {
 
 const it = (msg, fn) => describe(' ' + msg, fn)
 
-const matchers = (exp) => ({
+const expect = (exp) => ({
   toBe: (assertion) => {
     if (exp === assertion) {
       console.log('%c pass', 'color: green')
@@ -25,5 +25,3 @@ const matchers = (exp) => ({
     };
   }
 });
-
-const expect = (exp) => matchers(exp)
