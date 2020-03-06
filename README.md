@@ -1,6 +1,7 @@
 # Notes app 📝
 
 Check it out in action, right now, [click here!](http://note-app-js.surge.sh/)
+<a name='http://note-app-js.surge.sh/'>link</a>
 
 #### Technologies: Javascript, HTML, CSS 
 
